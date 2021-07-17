@@ -17,14 +17,18 @@ html, body {
 
 html {
 	font-size: 1em;
-	background:#fcf4f4 
+	background:transparent
 }
 
 body { 
 	font-family: 'Raleway', sans-serif;
-	background-color: $background_color;
+	// background-color: $background_color;
+	background: $background_color url('style-guide-template/src/assets/branding/V8.svg') no-repeat fixed top right;
 }
 
+.intro {
+	
+}
 
 .preamble { 
 	margin: auto;
@@ -47,6 +51,7 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
+  background: transparent;
 }
 
 .explanation{
@@ -58,7 +63,7 @@ body {
 	font-size: .8em;
 	text-align: center;
 	position: relative;
-	background: blue;
+	background: $color-3;
 	padding: 1em 2em;
 	color: #fff;
 	margin-bottom: 4em;
@@ -74,7 +79,7 @@ body {
 	max-width: 30em;
 	font-size: .8em;
 	text-align: center;
-	background: blue;
+	background: $color-3;
 	padding: 1em 2em;
 	color: #fff;
 	margin-bottom: 4em;
@@ -89,7 +94,7 @@ body {
 	max-width: 30em;
 	font-size: .8em;
 	text-align: center;
-	background: blue;
+	background: $color-3;
 	padding: 1em 2em;
 	color: #fff;
 	margin-bottom: 4em;
@@ -99,6 +104,7 @@ body {
 
 .requirements{
   grid-column: 1 / span 3;
+  background: transparent;
 }
 
 .summary, h1, h2 {
@@ -108,18 +114,17 @@ body {
 	font-size: .8em;
 	text-align: center;
 	position: relative;
-	background: blue;
+	background: transparent;
 	padding: 1em 2em;
 	color: #fff;
 	margin-bottom: 4em;
-	overflow:auto;
 	box-sizing: border-box;
 }
 
 
 .summary a, footer a {
 	display: inline-block;
-	background:black;
+	background:transparent;
 	padding: .25em;
 	border-radius: .25em;
 	text-decoration: none;
@@ -185,7 +190,7 @@ h3 {
 }
 
 aside { 
-	background: blue;
+	background: transparent;
 	border-bottom: .5em solid black; 
 	color: white; 
 	padding: 0 1em 2em 1em;
@@ -211,6 +216,10 @@ p[role="contentinfo"] {
 }
 
 .design-name { display: block; text-transform: uppercase;}
+
+.design-selection {
+	background: url('style-guide-template/src/assets/branding/Tall_Pinstripe.svg') no-repeat right;
+}
 
 .design-selection li {
 	margin-bottom: .75em;
@@ -259,6 +268,10 @@ footer a {
 	.main, .preamble { 
 		width: 60%;
 		max-width: calc(42em + .5vw);
+	}
+
+	.extra1 {
+		
 	}
 	
 }
