@@ -94,6 +94,17 @@ body {
   background: transparent;
 }
 
+.explanation, .participation, .benefits{
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+
 .explanation {
   grid-column: 1;
   grid-row: 1;
@@ -103,7 +114,7 @@ body {
   font-size: 0.8em;
   text-align: center;
   position: relative;
-  background: #ff0d00;
+  background: #670d17;
   padding: 1em 2em;
   color: #fff;
   margin-bottom: 4em;
@@ -119,7 +130,7 @@ body {
   max-width: 30em;
   font-size: 0.8em;
   text-align: center;
-  background: #ff0d00;
+  background: #670d17;
   padding: 1em 2em;
   color: #fff;
   margin-bottom: 4em;
@@ -129,17 +140,25 @@ body {
 
 .benefits {
   grid-column: 3;
-  margin: auto;
+  grid-row: 1;
+  margin: 3em auto;
   width: 80%;
   max-width: 30em;
   font-size: 0.8em;
   text-align: center;
-  background: #ff0d00;
+  background: #670d17;
   padding: 1em 2em;
   color: #fff;
   margin-bottom: 4em;
   box-sizing: border-box;
   border-radius: 9em;
+}
+
+.explanation:hover, .participation:hover, .benefits:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1.3) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
 }
 
 .requirements {
